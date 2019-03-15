@@ -12,7 +12,8 @@
 
 /* High Level Configuration Options */
 #define CONFIG_EXYNOS4210		1	/* which is a EXYNOS4210 SoC */
-#define CONFIG_ORIGEN			1	/* working with ORIGEN*/
+#define CONFIG_ITOP4412			1	/* working with itop4412*/
+
 
 #define CONFIG_SYS_DCACHE_OFF		1
 
@@ -26,7 +27,7 @@
 #define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_SDRAM_BASE + 0x6000000)
 #define CONFIG_SYS_LOAD_ADDR		(CONFIG_SYS_SDRAM_BASE + 0x3E00000)
 
-#define CONFIG_MACH_TYPE		MACH_TYPE_ORIGEN
+#define CONFIG_MACH_TYPE		MACH_TYPE_ITOP4412
 
 /* select serial console configuration */
 
@@ -44,7 +45,7 @@
 
 /* MMC SPL */
 #define COPY_BL2_FNPTR_ADDR	0x02020030
-#define CONFIG_SPL_TEXT_BASE	0x02021410
+#define CONFIG_SPL_TEXT_BASE	0x02023400
 
 #define CONFIG_EXTRA_ENV_SETTINGS \
 	"loadaddr=0x40007000\0" \
